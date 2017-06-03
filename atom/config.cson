@@ -18,7 +18,6 @@
       "react"
       "linter-csslint"
       "linter"
-      "wordpress-api"
       "atom-typescript"
       "editorconfig"
     ]

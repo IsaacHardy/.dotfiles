@@ -37,6 +37,7 @@ echo "${GREEN}>>>>> Finished - Adding Applications to Dock${NC}"
 # Install prezto
 # echo "${YELLOW}>>>>> Configuring Prezto${NC}"
 # sh $scripts/prezto.sh
+# echo "${GREEN}>>>>> Finished - Configuring Prezto${NC}"
 
 # create dotfiles_old in homedir
 echo "${CYAN}>>>>> Creating $olddir for backup of any existing dotfiles in ~${NC}"
@@ -45,7 +46,6 @@ mkdir -p $olddir
 # change to the dotfiles directory
 echo "${CYAN}>>>>> Changing to the $templates directory${NC}"
 cd $templates
-
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
 echo "${YELLOW}>>>>> Moving existing dotfiles from ~ to $olddir \n${NC}"
@@ -56,10 +56,9 @@ done
 
 echo "${GREEN}>>>>> Finished - Moving existing dotfiles from ~ to $olddir \n${NC}"
 
+# change back to .dotfiles directory
 echo "${CYAN}>>>>> Heading back to .dotfiles directory${NC}"
 cd ..
-
-
 
 # Copy over Atom Information
 echo "${YELLOW}>>>>> Linking Atom configuration files${NC}"
@@ -82,6 +81,8 @@ echo "${YELLOW}>>>>> Installing Atom Packages${NC}"
 sh $scripts/atom-package-install.sh
 echo "${GREEN}>>>>> Finished - Installing Atom Packages${NC}"
 
+echo ""
+echo ""
 echo "${YELLOW}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>${NC}"
 echo "${YELLOW}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>${NC}"
 echo "${GREEN}>>>>> INSTALLATION COMPLETE <<<<<${NC}"
