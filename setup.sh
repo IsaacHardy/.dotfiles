@@ -9,7 +9,7 @@ dir=~/.dotfiles
 templates=$dir/templates
 extras=$dir/extras
 olddir=~/.dotfiles_old
-files="gitconfig zshrc zpreztorc gitignore_global npmrc vimrc"
+files="gitconfig zshrc zpreztorc gitignore_global npmrc"
 
 # create dotfiles_old in homedir
 echo "\n1. Creating $olddir for backup of any existing dotfiles in ~"
