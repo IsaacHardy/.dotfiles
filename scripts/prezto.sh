@@ -4,6 +4,11 @@
 #
 # This script installs prezto for easy Zsh config.
 
+# Colors
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NC='\033[0m' # No Color
+
 # Launch Zsh
 zsh
 
@@ -18,3 +23,8 @@ done
 
 # Make Zsh default
 chsh -s /bin/zsh
+
+
+echo "${GREEN}>>>>>--------->${NC}"
+echo "${GREEN}>>>>> Installation Complete${NC}"
+echo "${GREEN}>>>>>--------->${NC}"

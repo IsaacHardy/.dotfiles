@@ -14,36 +14,37 @@ files="gitconfig zshrc zpreztorc gitignore_global npmrc"
 
 # Colors
 RED='\033[0;31m'
+GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
 # Install Homebrew
-echo "> Installing Home Brew"
+echo "${GREEN}>>>>> Installing Home Brew${NC}"
 sh ./scripts/homebrew.sh
 
 # Install Applications with Homebrew
-echo "> brew bundle"
+echo "${GREEN}>>>>> brew bundle${NC}"
 brew bundle
 
 # create dotfiles_old in homedir
-echo "> Creating $olddir for backup of any existing dotfiles in ~"
+echo "${GREEN}>>>>> Creating $olddir for backup of any existing dotfiles in ~${NC}"
 mkdir -p $olddir
 
 # change to the dotfiles directory
-echo "> Changing to the $templates directory"
+echo "${GREEN}>>>>> Changing to the $templates directory${NC}"
 cd $templates
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
-echo "> Moving existing dotfiles from ~ to $olddir \n"
+echo "${GREEN}>>>>> Moving existing dotfiles from ~ to $olddir \n${NC}"
 for file in $files; do
     mv ~/.$file $olddir/
     ln -s $templates/$file ~/.$file
 done
 
-echo "> Heading back to .dotfiles directory"
+echo "${GREEN}>>>>> Heading back to .dotfiles directory${NC}"
 cd ..
 
 # Copy over Atom Information
-echo "> Copying Over Atom Info"
+echo "${GREEN}>>>>> Copying Over Atom Info${NC}"
 ln -sf $atom/config.cson ~/.atom
 ln -sf $atom/keymap.cson ~/.atom
 ln -sf $atom/package.cson ~/.atom
@@ -56,13 +57,9 @@ ln -sf $atom/init.coffee ~/.atom
 # sh $scripts/atom-package-backup.sh
 
 # Install Atom packages
-echo ">>> ${RED}Install Atom Packages${NC}"
+echo "${GREEN}>>>>> Install Atom Packages${NC}"
 sh $scripts/atom-package-install.sh
 
 # Install prezto
-echo "> Configuring Prezto"
+echo "${GREEN}>>>>> Configuring Prezto${NC}"
 sh $scripts/prezto.sh
-
-echo "--------->"
-echo "Installation Complete"
-echo "--------->"
