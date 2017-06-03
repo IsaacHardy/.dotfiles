@@ -9,14 +9,11 @@ fi
 
 # Aliases
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
-alias gogo='~/Developer/go/src/github.com/twhitacre'
-alias proj='~/Projects'
 alias term='itermocil'
 alias pyserver='python -m SimpleHTTPServer 9000'
 alias weather='curl -4 wttr.in/Atlanta'
 alias v='vim .'
 alias yolo='git push origin master && git push heroku master'
-alias ace='./ace'
 alias dot='~/.dotfiles'
 
 alias do_personal='ssh root@104.131.24.10'
@@ -36,12 +33,5 @@ COMPLETION_WAITING_DOTS="true"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
-# Golang Settings
-export GOPATH=$HOME/Developer/go
-export GOROOT=/usr/local/opt/go/libexec
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
-
 # Iron Yard Specific Stuff
 alias iron='~/TheIronYard'
-alias nl='newline_catalog'
