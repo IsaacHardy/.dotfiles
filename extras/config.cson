@@ -1,0 +1,48 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "1854ab4f-43d4-4809-a019-1a7ac89fbe95"
+  "atom-material-ui":
+    colors:
+      abaseColor: "#507b9e"
+    fonts: {}
+  "atom-typescript": {}
+  core:
+    audioBeep: false
+    disabledPackages: [
+      "linter-eslint"
+      "linter-htmlhint"
+      "linter-jshint"
+      "linter-stylelint"
+      "atom-jade"
+      "react"
+      "linter-csslint"
+      "linter"
+      "wordpress-api"
+      "atom-typescript"
+      "editorconfig"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "dracula-ui"
+      "dracula-syntax"
+    ]
+  editor:
+    fontSize: 12
+    invisibles: {}
+  "exception-reporting":
+    userId: "4900a116-4f89-cf2f-f613-27294d516994"
+  "file-icons": {}
+  linter: {}
+  "linter-jshint": {}
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
+  tabs:
+    usePreviewTabs: true
+  welcome:
+    showOnStartup: false

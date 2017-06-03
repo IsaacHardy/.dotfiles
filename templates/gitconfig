@@ -1,0 +1,12 @@
+[user]
+	email = isaac@ihardy.co
+	name = Isaac Hardy
+[core]
+  editor = vim
+	excludesfile = /Users/IsaacHardy/.gitignore_global
+[github]
+  user = isaachardy
+[color]
+  ui = true
+[format]
+  pretty = %C(magenta)%h%Creset %s %C(cyan)(%an, %cr)%Creset
