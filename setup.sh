@@ -13,11 +13,14 @@ files="gitconfig zshrc zpreztorc gitignore_global npmrc"
 
 # Install Homebrew
 echo "> Installing Home Brew"
-sh homebrew.sh
+sh ./scripts/homebrew.sh
 
 # Install Applications with Homebrew
 echo "> brew bundle"
 brew bundle
+
+# Install prezto
+sh ./scripts/prezto.sh
 
 # create dotfiles_old in homedir
 echo "> Creating $olddir for backup of any existing dotfiles in ~"
@@ -34,7 +37,7 @@ for file in $files; do
     ln -s $templates/$file ~/.$file
 done
 
-# Copy over Sublime Text 3 Settings
+# Copy over Atom Information
 echo "> Copying Over Atom Info"
 ln -sf $extras/config.cson ~/.atom
 ln -sf $extras/keymap.cson ~/.atom
@@ -45,11 +48,11 @@ ln -sf $extras/init.coffee ~/.atom
 
 # Create Packages.txt File
 echo "> Creating Packages.txt file"
-sh atom-package-backup.sh
+sh ./scripts/atom-package-backup.sh
 
 # Install Atom packages
 echo "> Install Atom Packages"
-sh atom-package-install.sh
+sh ./scripts/atom-package-install.sh
 
 echo "--------->"
 echo "Installation Complete"
