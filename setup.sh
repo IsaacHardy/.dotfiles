@@ -26,18 +26,13 @@ for file in $files; do
     ln -s $templates/$file ~/.$file
 done
 
-# move over VIM Snippets - using UltiSnips
-echo "\n4. Moving over Vim Snippets \n"
-rm -rf ~/.vim/snippets
-mkdir ~/.vim/snippets
-mkdir ~/.vim/snippets/UltiSnips
-cp -R $dir/vim-snippets/ ~/.vim/snippets/UltiSnips
-
 # Copy over Sublime Text 3 Settings
-echo "\n5. Copying Over Atom Info"
+echo "\n4. Copying Over Atom Info"
 ln -sf $extras/config.cson ~/.atom
 ln -sf $extras/keymap.cson ~/.atom
 ln -sf $extras/package.cson ~/.atom
 ln -sf $extras/snippets.cson ~/.atom
 ln -sf $extras/styles.less ~/.atom
 ln -sf $extras/init.coffee ~/.atom
+
+echo "COMPLETE!"
