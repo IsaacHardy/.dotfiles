@@ -23,4 +23,3 @@ react@0.16.2
 seti-ui@1.8.0
 spacegray-dark-syntax@0.2.0
 wordpress-api@1.2.2
-

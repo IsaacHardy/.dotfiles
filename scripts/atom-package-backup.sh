@@ -8,4 +8,4 @@
 
 set -e
 
-apm list --installed --bare > ~/.dotfiles/extras/packages.txt
+apm list --installed --bare > ~/.dotfiles/atom/packages.txt

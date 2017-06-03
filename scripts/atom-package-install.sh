@@ -10,4 +10,4 @@
 
 set -e
 
-apm install --packages-file ~/.dotfiles/extras/packages.txt
+apm install --packages-file ~/.dotfiles/atom/packages.txt
