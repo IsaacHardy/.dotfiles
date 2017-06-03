@@ -1,11 +1,11 @@
 [user]
-	email = isaac@ihardy.co
-	name = Isaac Hardy
+	email = isaac@ihardy.co  # Update with Your Information
+	name = Isaac Hardy  # Update with Your Information
 [core]
   editor = vim
-	excludesfile = /Users/IsaacHardy/.gitignore_global
+	excludesfile = /Users/IsaacHardy/.gitignore_global # Update with Your Information
 [github]
-  user = isaachardy
+  user = isaachardy  # Update with Your Information
 [color]
   ui = true
 [format]
