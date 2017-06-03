@@ -16,10 +16,6 @@ alias v='vim .'
 alias yolo='git push origin master && git push heroku master'
 alias dot='~/.dotfiles'
 
-alias do_personal='ssh root@104.131.24.10'
-alias do_projects='ssh tim@159.203.91.123'
-alias do_produce='ssh tim@107.170.89.24'
-
 # Git Shortcuts
 alias gp="git push origin"
 alias gc="git commit"
