@@ -26,12 +26,12 @@ echo "${GREEN}>>>>> Finished - Installing Home Brew${NC}"
 
 # Install Applications with Homebrew
 echo "${YELLOW}>>>>> Starting Brew Bundle${NC}"
-brew bundle
+# brew bundle
 echo "${GREEN}>>>>> Finished - Brew Bundle${NC}"
 
 # Add Applications to Dock
 echo "${YELLOW}>>>>> Adding Applications to Dock${NC}"
-sh $scripts/dock.sh
+# sh $scripts/dock.sh
 echo "${GREEN}>>>>> Finished - Adding Applications to Dock${NC}"
 
 # Install prezto
@@ -53,7 +53,6 @@ for file in $files; do
     mv ~/.$file $olddir/
     ln -s $templates/$file ~/.$file
 done
-
 echo "${GREEN}>>>>> Finished - Moving existing dotfiles from ~ to $olddir \n${NC}"
 
 # change back to .dotfiles directory
