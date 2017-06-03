@@ -25,6 +25,10 @@ sh ./scripts/homebrew.sh
 echo "${GREEN}>>>>> brew bundle${NC}"
 brew bundle
 
+# Add Applications to Dock
+echo "${GREEN}>>>>> Adding Applications to Dock${NC}"
+sh $scripts/dock.sh
+
 # create dotfiles_old in homedir
 echo "${GREEN}>>>>> Creating $olddir for backup of any existing dotfiles in ~${NC}"
 mkdir -p $olddir
