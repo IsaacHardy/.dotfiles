@@ -21,10 +21,9 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
   ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
 
-# Make Zsh default
-chsh -s /bin/zsh
-
-
 echo "${GREEN}>>>>>--------->${NC}"
 echo "${GREEN}>>>>> Installation Complete${NC}"
 echo "${GREEN}>>>>>--------->${NC}"
+
+# Make Zsh default
+chsh -s /bin/zsh
