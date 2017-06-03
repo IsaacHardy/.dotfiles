@@ -7,7 +7,7 @@
 #  Variables
 dir=~/.dotfiles
 templates=$dir/templates
-extras=$dir/extras
+atom=$dir/atom
 olddir=~/.dotfiles_old
 files="gitconfig zshrc zpreztorc gitignore_global npmrc"
 
@@ -39,12 +39,12 @@ done
 
 # Copy over Atom Information
 echo "> Copying Over Atom Info"
-ln -sf $extras/config.cson ~/.atom
-ln -sf $extras/keymap.cson ~/.atom
-ln -sf $extras/package.cson ~/.atom
-ln -sf $extras/snippets.cson ~/.atom
-ln -sf $extras/styles.less ~/.atom
-ln -sf $extras/init.coffee ~/.atom
+ln -sf $atom/config.cson ~/.atom
+ln -sf $atom/keymap.cson ~/.atom
+ln -sf $atom/package.cson ~/.atom
+ln -sf $atom/snippets.cson ~/.atom
+ln -sf $atom/styles.less ~/.atom
+ln -sf $atom/init.coffee ~/.atom
 
 # Create Packages.txt File
 echo "> Creating Packages.txt file"
