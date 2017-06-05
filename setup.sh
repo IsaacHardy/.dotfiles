@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 ############################
 # .make.sh
 # This script creates symlinks from the home directory to any desired dotfiles in ~/.dotfiles
@@ -35,9 +35,9 @@ echo "${YELLOW}>>>>> Adding Applications to Dock${NC}"
 echo "${GREEN}>>>>> Finished - Adding Applications to Dock${NC}"
 
 # Install prezto
-# echo "${YELLOW}>>>>> Configuring Prezto${NC}"
-# sh $scripts/prezto.sh
-# echo "${GREEN}>>>>> Finished - Configuring Prezto${NC}"
+echo "${YELLOW}>>>>> Configuring Prezto${NC}"
+sh $scripts/prezto.sh
+echo "${GREEN}>>>>> Finished - Configuring Prezto${NC}"
 
 # create dotfiles_old in homedir
 echo "${CYAN}>>>>> Creating $olddir for backup of any existing dotfiles in ~${NC}"
@@ -82,8 +82,8 @@ echo "${GREEN}>>>>> Finished - Installing Atom Packages${NC}"
 
 echo ""
 echo ""
-echo "${YELLOW}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>${NC}"
-echo "${YELLOW}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>${NC}"
-echo "${GREEN}>>>>> INSTALLATION COMPLETE <<<<<${NC}"
-echo "${CYAN}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>${NC}"
-echo "${CYAN}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>${NC}"
+echo "${YELLOW}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>${NC}"
+echo "${YELLOW}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>${NC}"
+echo "${GREEN}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> INSTALLATION COMPLETE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<${NC}"
+echo "${CYAN}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>${NC}"
+echo "${CYAN}>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>${NC}"
