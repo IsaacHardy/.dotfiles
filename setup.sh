@@ -26,12 +26,12 @@ echo "${GREEN}>>>>> Finished - Installing Home Brew${NC}"
 
 # Install Applications with Homebrew
 echo "${YELLOW}>>>>> Starting Brew Bundle${NC}"
-# brew bundle
+brew bundle
 echo "${GREEN}>>>>> Finished - Brew Bundle${NC}"
 
 # Add Applications to Dock
 echo "${YELLOW}>>>>> Adding Applications to Dock${NC}"
-# sh $scripts/dock.sh
+sh $scripts/dock.sh
 echo "${GREEN}>>>>> Finished - Adding Applications to Dock${NC}"
 
 # Install prezto
