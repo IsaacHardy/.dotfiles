@@ -17,7 +17,7 @@ NC='\033[0m' # No Color
 # Remove Old .z* Files
 echo "${YELLOW}>>>>> Removing old .z* files${NC}"
 
-for file in $files
+for file in $files;
 do
   rm -rf ~/.$file
 done
