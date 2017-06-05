@@ -4,6 +4,9 @@
 #
 # This script installs prezto for easy Zsh config.
 
+# Variables
+files="zshrc zpreztorc zprezto"
+
 # Colors
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -13,10 +16,10 @@ NC='\033[0m' # No Color
 
 # Remove Old .z* Files
 echo "${YELLOW}>>>>> Removing old .z* files${NC}"
-arr=(${ZDOTDIR:-$HOME}/.z*)
-for file in ${arr[@]}
+
+for file in $files
 do
-  rm -rf $file
+  rm -rf ~/.$file
 done
 echo "${GREEN}>>>>> Finished - Removing old .z* files${NC}"
 
@@ -37,5 +40,3 @@ echo "${GREEN}>>>>> Finished - Creating Zsh Configuration${NC}"
 echo "${YELLOW}>>>>> Making Zsh Default Shell${NC}"
 chsh -s /bin/zsh
 echo "${GREEN}>>>>> Finished - Making Zsh Default Shell${NC}"
-
-exit 0
