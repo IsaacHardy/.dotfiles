@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/zsh
 #
 # usage: prezto
 #
@@ -27,9 +27,9 @@ echo "${GREEN}>>>>> Finished - Cloning Prezto Repositiory${NC}"
 
 # Create a new Zsh configuration
 echo "${YELLOW}>>>>> Creating Zsh Configuration${NC}"
-shopt -s extglob
-for rcfile in $HOME/.zprezto/runcoms/!(README.md); do
-  ln -s "$rcfile" "$HOME/.$(basename $rcfile)"
+setopt EXTENDED_GLOB
+for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
 echo "${GREEN}>>>>> Finished - Creating Zsh Configuration${NC}"
 

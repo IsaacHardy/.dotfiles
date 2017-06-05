@@ -36,7 +36,7 @@ echo "${GREEN}>>>>> Finished - Adding Applications to Dock${NC}"
 
 # Install prezto
 echo "${YELLOW}>>>>> Configuring Prezto${NC}"
-sh $scripts/prezto.sh
+zsh $scripts/prezto.sh
 echo "${GREEN}>>>>> Finished - Configuring Prezto${NC}"
 
 # create dotfiles_old in homedir

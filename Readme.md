@@ -6,6 +6,7 @@ These are my dot files. Enjoy.
 
 * Clone this repo to your home directory
 * Run the `setup.sh` file
+* Enter *Password* when Prompt
 
 ```sh
 $ sh setup.sh
