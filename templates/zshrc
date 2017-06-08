@@ -31,3 +31,5 @@ eval "$(rbenv init -)"
 
 # Iron Yard Specific Stuff
 alias iron='~/TheIronYard'
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(newline_hw init)"
