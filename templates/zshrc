@@ -15,6 +15,9 @@ alias weather='curl -4 wttr.in/Atlanta'
 alias v='vim .'
 alias yolo='git push origin master && git push heroku master'
 alias dot='~/.dotfiles'
+alias nodebp='. ~/.node_boilerplate/script.sh'
+alias cpwd='cd $pwd'
+alias google-chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
 
 # Git Shortcuts
 alias gp="git push origin"

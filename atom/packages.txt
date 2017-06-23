@@ -17,7 +17,10 @@ linter-jshint@3.1.2
 linter-stylelint@3.10.0
 minimap@4.28.2
 minimap-highlight-selected@4.6.1
+package-sync@1.1.0
 pigments@0.39.1
 react@0.16.2
 seti-ui@1.8.0
 spacegray-dark-syntax@0.2.0
+wordpress-api@1.2.2
+

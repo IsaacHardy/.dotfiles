@@ -71,9 +71,9 @@ ln -sf $atom/init.coffee ~/.atom
 echo "${GREEN}>>>>> Finished - Linking Atom configuration files${NC}"
 
 # Create Packages.txt File (This will save your current Atom Package list)
-# echo "${YELLOW}>>>>> Creating Packages.txt file${NC}"
-# sh $scripts/atom-package-backup.sh
-# echo "${GREEN}>>>>> Finished - Creating Packages.txt file${NC}"
+echo "${YELLOW}>>>>> Creating Packages.txt file${NC}"
+sh $scripts/atom-package-backup.sh
+echo "${GREEN}>>>>> Finished - Creating Packages.txt file${NC}"
 
 # Install Atom packages
 echo "${YELLOW}>>>>> Installing Atom Packages${NC}"

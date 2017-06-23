@@ -27,7 +27,7 @@
       "dracula-syntax"
     ]
   editor:
-    fontSize: 16
+    fontSize: 17
     invisibles: {}
   "exception-reporting":
     userId: "4900a116-4f89-cf2f-f613-27294d516994"
