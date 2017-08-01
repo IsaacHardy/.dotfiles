@@ -18,6 +18,7 @@ alias dot='~/.dotfiles'
 alias nodebp='. ~/.node_boilerplate/script.sh'
 alias cpwd='cd $pwd'
 alias google-chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+alias tiyd='sh ~/tiy_dir.sh'
 
 # Git Shortcuts
 alias gp="git push origin"

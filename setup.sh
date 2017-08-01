@@ -21,7 +21,7 @@ NC='\033[0m' # No Color
 
 # Install Homebrew
 echo "${YELLOW}>>>>> Installing Home Brew${NC}"
-sh ./scripts/homebrew.sh
+sh $scripts/homebrew.sh
 echo "${GREEN}>>>>> Finished - Installing Home Brew${NC}"
 
 # Install Applications with Homebrew
@@ -72,7 +72,7 @@ echo "${GREEN}>>>>> Finished - Linking Atom configuration files${NC}"
 
 # Create Packages.txt File (This will save your current Atom Package list)
 echo "${YELLOW}>>>>> Creating Packages.txt file${NC}"
-sh $scripts/atom-package-backup.sh
+# sh $scripts/atom-package-backup.sh
 echo "${GREEN}>>>>> Finished - Creating Packages.txt file${NC}"
 
 # Install Atom packages

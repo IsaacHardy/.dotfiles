@@ -10,16 +10,17 @@
   core:
     audioBeep: false
     disabledPackages: [
-      "linter-eslint"
       "linter-htmlhint"
-      "linter-jshint"
       "linter-stylelint"
       "atom-jade"
-      "react"
       "linter-csslint"
-      "linter"
       "atom-typescript"
       "editorconfig"
+      "wordpress-api"
+      "linter"
+      "linter-eslint"
+      "linter-jshint"
+      "linter-ui-default"
     ]
     telemetryConsent: "no"
     themes: [
@@ -27,13 +28,15 @@
       "dracula-syntax"
     ]
   editor:
-    fontSize: 17
+    fontSize: 13
     invisibles: {}
   "exception-reporting":
     userId: "4900a116-4f89-cf2f-f613-27294d516994"
   "file-icons": {}
   linter: {}
   "linter-jshint": {}
+  "linter-ui-default":
+    panelHeight: 81
   minimap:
     plugins:
       "highlight-selected": true
