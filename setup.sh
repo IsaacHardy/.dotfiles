@@ -3,6 +3,7 @@
 # .make.sh
 # This script creates symlinks from the home directory to any desired dotfiles in ~/.dotfiles
 ############################
+set -e
 
 #  Variables
 dir=~/.dotfiles
@@ -50,6 +51,7 @@ cd $templates
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
 echo "${YELLOW}>>>>> Moving existing dotfiles from ~ to $olddir \n${NC}"
 for file in $files; do
+    set -e
     mv ~/.$file $olddir/
     ln -s $templates/$file ~/.$file
 done
