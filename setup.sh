@@ -50,11 +50,11 @@ cd $templates
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks
 echo "${YELLOW}>>>>> Moving existing dotfiles from ~ to $olddir \n${NC}"
-for file in $files; do
-    set -e
-    mv ~/.$file $olddir/
-    ln -s $templates/$file ~/.$file
-done
+# for file in $files; do
+#     set -e
+#     mv ~/.$file $olddir/
+#     ln -s $templates/$file ~/.$file
+# done
 echo "${GREEN}>>>>> Finished - Moving existing dotfiles from ~ to $olddir \n${NC}"
 
 # change back to .dotfiles directory
