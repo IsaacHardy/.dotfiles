@@ -1,26 +1,10 @@
 "*":
-  "atom-beautify":
-    general:
-      _analyticsUserId: "1854ab4f-43d4-4809-a019-1a7ac89fbe95"
-  "atom-material-ui":
-    colors:
-      abaseColor: "#507b9e"
-    fonts: {}
-  "atom-typescript": {}
+  "atom-clock":
+    dateFormat: "MMMM Do, dddd, h:mm a\t"
   core:
     audioBeep: false
     disabledPackages: [
-      "linter-htmlhint"
-      "linter-stylelint"
-      "atom-jade"
-      "linter-csslint"
-      "atom-typescript"
-      "editorconfig"
-      "wordpress-api"
-      "linter"
-      "linter-eslint"
-      "linter-jshint"
-      "linter-ui-default"
+      "markdown-preview"
     ]
     telemetryConsent: "no"
     themes: [
@@ -28,23 +12,42 @@
       "dracula-syntax"
     ]
   editor:
-    fontSize: 13
+    fontFamily: "monaco"
+    fontSize: 16
     invisibles: {}
+    showIndentGuide: true
   "exception-reporting":
     userId: "4900a116-4f89-cf2f-f613-27294d516994"
   "file-icons": {}
-  linter: {}
+  linter:
+    lintOnChange: false
+  "linter-eslint": {}
   "linter-jshint": {}
   "linter-ui-default":
     panelHeight: 81
   minimap:
     plugins:
+      "color-highlight": true
+      "git-diff": true
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
+      selection: true
   "package-sync":
     createOnChange: true
     forceOverwrite: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      showInStatusBar: true
+    prettierOptions:
+      bracketSpacing: false
+      singleQuote: true
+      trailingComma: "es5"
+    useEditorConfig: false
+    useEslint: true
   tabs:
     usePreviewTabs: true
+  teletype: {}
+  "tree-view": {}
   welcome:
     showOnStartup: false
