@@ -61,26 +61,6 @@ echo "${GREEN}>>>>> Finished - Moving existing dotfiles from ~ to $olddir \n${NC
 echo "${CYAN}>>>>> Heading back to .dotfiles directory${NC}"
 cd ..
 
-# Copy over Atom Information
-echo "${YELLOW}>>>>> Linking Atom configuration files${NC}"
-ln -sf $atom/config.cson ~/.atom
-ln -sf $atom/keymap.cson ~/.atom
-ln -sf $atom/snippets.cson ~/.atom
-ln -sf $atom/styles.less ~/.atom
-ln -sf $atom/init.coffee ~/.atom
-
-echo "${GREEN}>>>>> Finished - Linking Atom configuration files${NC}"
-
-# Create Packages.txt File (This will save your current Atom Package list)
-# echo "${YELLOW}>>>>> Creating Packages.txt file${NC}"
-# sh $scripts/atom-package-backup.sh
-# echo "${GREEN}>>>>> Finished - Creating Packages.txt file${NC}"
-
-# Install Atom packages
-echo "${YELLOW}>>>>> Installing Atom Packages${NC}"
-sh $scripts/atom-package-install.sh
-echo "${GREEN}>>>>> Finished - Installing Atom Packages${NC}"
-
 echo ""
 echo ""
 echo "${GREEN}I${CYAN}n${YELLOW}s${GREEN}t${CYAN}a${YELLOW}l${GREEN}l${CYAN}a${YELLOW}t${GREEN}i${CYAN}o${YELLOW}n ${GREEN}C${CYAN}o${YELLOW}m${GREEN}p${CYAN}l${YELLOW}e${GREEN}t${CYAN}e${YELLOW}!"

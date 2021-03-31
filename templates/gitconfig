@@ -1,9 +1,8 @@
 [user]
-	email = isaac.hardy@newspring.cc
+	email = isaac@isaachardy.io
 	name = Isaac Hardy  # Update with Your Information
 [core]
-  editor = atom
-	excludesfile = /Users/IsaacHardy/.gitignore_global # Update with Your Information
+  editor = code
 [github]
   user = isaachardy  # Update with Your Information
 [color]
