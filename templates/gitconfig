@@ -9,3 +9,5 @@
   ui = true
 [format]
   pretty = %C(magenta)%h%Creset %s %C(cyan)(%an, %cr)%Creset
+[credential]
+	helper = osxkeychain
