@@ -52,7 +52,6 @@ cd $templates
 echo "${YELLOW}>>>>> Moving existing dotfiles from ~ to $olddir \n${NC}"
 for file in $files; do
     set -e
-    mv ~/.$file $olddir/
     ln -sf $templates/$file ~/.$file
 done
 echo "${GREEN}>>>>> Finished - Moving existing dotfiles from ~ to $olddir \n${NC}"
